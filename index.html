@@ -222,12 +222,12 @@
 <div class="cell markdown" id="7fiCWeoHGThY">
 <h3 id="linear-regression">Linear Regression</h3>
 <p>The main idea of linear regression is the assumption that:</p>
-<p><img src="vertopal_10fe91342b03470daf154bf55ac360b1/05d77a00dfbcb1ac01e01df1d5e667b8762406e6.jpg" alt="Equation 1" /></p>
+<p><img src="https://user-images.githubusercontent.com/85206050/153773910-7aae08bd-dd2d-49b2-8270-5abeaec13455.jpg" alt="Equation 1" /></p>
 <p>...where <em>y</em> is our target dependent variable and <em>X</em> is our predictive independent variable(s).</p>
 <p>If we pre-multiply this equation with a matrix of weights we get:</p>
-<p><img src="vertopal_10fe91342b03470daf154bf55ac360b1/e5d00dca6277bd4047f66bcf535ab0f433600d72.jpg" alt="Equation 2" /></p>
+<p><img src="https://user-images.githubusercontent.com/85206050/153773917-73f76a7b-b458-4a5f-a6e4-b414f8471b19.jpg" alt="Equation 2" /></p>
 <p>The independent observations are the rows of the matrix <em>X</em>. Each row has a number of columns (this is the number of features) and we can denote it by <em>p</em>. The distance between two data points or independent observations is the Euclidean distance between the two represented <em>p-</em>dimensional vectors. The equation is:</p>
-<p><img src="vertopal_10fe91342b03470daf154bf55ac360b1/030df7bf2b7a01945222cd69a194c4ca80c84eb8.jpg" alt="Equation 3" /></p>
+<p><img src="https://user-images.githubusercontent.com/85206050/153773922-7d1f5848-4127-4158-8e18-fc85b0db9bd5.jpg" alt="Equation 3" /></p>
 <p>We shall have <em>i</em> different weight vectors because we have <span class="math inline"><em>n</em></span> different observations.</p>
 <p>All in all, linear regression can be seen as a linear combination of the observed outputs (values of the dependent variable) and the predictions we make are linear combinations of the actual observed values of the dependent variables.</p>
 <h3 id="comparision-with-loess">Comparision with loess</h3>
@@ -235,11 +235,11 @@
 <h3 id="random-forest-regression">Random Forest Regression</h3>
 <p>The random forest regression is an ensemble bagging algorithm that combines and averages the outputs of multiple decision trees. Decision trees are nonlinear computational structures that can be likened to a flowchart. The algorithm "learns" data by splitting it into subsets or "leaves" based on specific criteria for each attribute or prediction variable, which takes place at a "node". The data scientist decides the criteria for the model This process is repeated for each newly split subset through what is called "recursive partitioning" (method by which these criteria are used to determine dichotomous outcomes without the assumption of linearity). This process terminates when the subset at a node predicts the same value as the target value; however, the process will also terminate if continued splitting does not increase the accuracy of the predictions. Despite this, decision trees have a propensity to overfit the data.</p>
 <p><strong>Decision Tree Diagram</strong></p>
-<p><img src="vertopal_10fe91342b03470daf154bf55ac360b1/aa0c5f8e6f74ac24f77171f972a19f96478fa0b5.jpg" alt="Decision Tree Diagram" /></p>
+<p><img src="https://user-images.githubusercontent.com/85206050/153773005-48bd23cd-7c5b-4166-b791-230bb2aa18de.jpg" alt="Decision Tree Diagram" /></p>
 <p>Source: <a href="https://stackoverflow.com/questions/57005265/comprehending-large-decision-tree-diagram-for-variable-selection" class="uri">https://stackoverflow.com/questions/57005265/comprehending-large-decision-tree-diagram-for-variable-selection</a></p>
 <p>One set of models, known as ensemble learning methods, solve this problem by aggregating multiple learned models to identify the best one. One of the ways it does this is through a process called "bagging", which is the core framework of random forest regression, an uncorrelated set of decision trees. The algorithm utilizes bagging by generating a random subset of features or attributes to ensure a low correlation coefficient among the decision trees. In other words, because decision trees consider all possible attribute splits, they tend to have very high correlation coefficients and become overfit. Random forests solve this problem by selecting only a random subset of the attributes and averaging them. Because random forests are an ensemble of nonparametric decision trees, they are also nonparametric models, and stand to compete with loess.</p>
 <p><strong>Random Forest Diagram</strong></p>
-<p><img src="vertopal_10fe91342b03470daf154bf55ac360b1/e073a7544d28a61b36677211c2b99940eec5664a.jpg" alt="Random Forest Diagram" /></p>
+<p><img src="https://user-images.githubusercontent.com/85206050/153772762-599cdf69-cbe5-4fea-b5a3-0c97ddec1725.jpg" alt="Random Forest Diagram" /></p>
 <p>Source: <a href="https://www.ibm.com/cloud/learn/random-forest" class="uri">https://www.ibm.com/cloud/learn/random-forest</a></p>
 </div>
 <div class="cell markdown" id="JjJzHBR-oVNF">
